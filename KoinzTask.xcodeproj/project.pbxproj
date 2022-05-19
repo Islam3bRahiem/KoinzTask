@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E875BFA2836341E00B0FEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BF92836341E00B0FEE5 /* AppDelegate.swift */; };
+		8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */; };
+		8E875BFE2836341E00B0FEE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BFD2836341E00B0FEE5 /* ViewController.swift */; };
+		8E875C012836341E00B0FEE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E875BFF2836341E00B0FEE5 /* Main.storyboard */; };
+		8E875C042836341E00B0FEE5 /* KoinzTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C022836341E00B0FEE5 /* KoinzTask.xcdatamodeld */; };
+		8E875C062836342000B0FEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E875C052836342000B0FEE5 /* Assets.xcassets */; };
+		8E875C092836342000B0FEE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E875C072836342000B0FEE5 /* LaunchScreen.storyboard */; };
+		8E875C142836342000B0FEE5 /* KoinzTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C132836342000B0FEE5 /* KoinzTaskTests.swift */; };
+		8E875C1E2836342000B0FEE5 /* KoinzTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */; };
+		8E875C202836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E875C102836342000B0FEE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E875BEE2836341E00B0FEE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E875BF52836341E00B0FEE5;
+			remoteInfo = KoinzTask;
+		};
+		8E875C1A2836342000B0FEE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E875BEE2836341E00B0FEE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E875BF52836341E00B0FEE5;
+			remoteInfo = KoinzTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E875BF62836341E00B0FEE5 /* KoinzTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoinzTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E875BF92836341E00B0FEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		8E875BFD2836341E00B0FEE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E875C002836341E00B0FEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E875C032836341E00B0FEE5 /* KoinzTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KoinzTask.xcdatamodel; sourceTree = "<group>"; };
+		8E875C052836342000B0FEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E875C082836342000B0FEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E875C0A2836342000B0FEE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E875C0F2836342000B0FEE5 /* KoinzTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoinzTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E875C132836342000B0FEE5 /* KoinzTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskTests.swift; sourceTree = "<group>"; };
+		8E875C192836342000B0FEE5 /* KoinzTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoinzTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITests.swift; sourceTree = "<group>"; };
+		8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E875BF32836341E00B0FEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E875C0C2836342000B0FEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E875C162836342000B0FEE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E875BED2836341E00B0FEE5 = {
+			isa = PBXGroup;
+			children = (
+				8E875BF82836341E00B0FEE5 /* KoinzTask */,
+				8E875C122836342000B0FEE5 /* KoinzTaskTests */,
+				8E875C1C2836342000B0FEE5 /* KoinzTaskUITests */,
+				8E875BF72836341E00B0FEE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E875BF72836341E00B0FEE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E875BF62836341E00B0FEE5 /* KoinzTask.app */,
+				8E875C0F2836342000B0FEE5 /* KoinzTaskTests.xctest */,
+				8E875C192836342000B0FEE5 /* KoinzTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E875BF82836341E00B0FEE5 /* KoinzTask */ = {
+			isa = PBXGroup;
+			children = (
+				8E875BF92836341E00B0FEE5 /* AppDelegate.swift */,
+				8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */,
+				8E875BFD2836341E00B0FEE5 /* ViewController.swift */,
+				8E875BFF2836341E00B0FEE5 /* Main.storyboard */,
+				8E875C052836342000B0FEE5 /* Assets.xcassets */,
+				8E875C072836342000B0FEE5 /* LaunchScreen.storyboard */,
+				8E875C0A2836342000B0FEE5 /* Info.plist */,
+				8E875C022836341E00B0FEE5 /* KoinzTask.xcdatamodeld */,
+			);
+			path = KoinzTask;
+			sourceTree = "<group>";
+		};
+		8E875C122836342000B0FEE5 /* KoinzTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E875C132836342000B0FEE5 /* KoinzTaskTests.swift */,
+			);
+			path = KoinzTaskTests;
+			sourceTree = "<group>";
+		};
+		8E875C1C2836342000B0FEE5 /* KoinzTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */,
+				8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */,
+			);
+			path = KoinzTaskUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E875BF52836341E00B0FEE5 /* KoinzTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E875C232836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTask" */;
+			buildPhases = (
+				8E875BF22836341E00B0FEE5 /* Sources */,
+				8E875BF32836341E00B0FEE5 /* Frameworks */,
+				8E875BF42836341E00B0FEE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KoinzTask;
+			productName = KoinzTask;
+			productReference = 8E875BF62836341E00B0FEE5 /* KoinzTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E875C0E2836342000B0FEE5 /* KoinzTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E875C262836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTaskTests" */;
+			buildPhases = (
+				8E875C0B2836342000B0FEE5 /* Sources */,
+				8E875C0C2836342000B0FEE5 /* Frameworks */,
+				8E875C0D2836342000B0FEE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E875C112836342000B0FEE5 /* PBXTargetDependency */,
+			);
+			name = KoinzTaskTests;
+			productName = KoinzTaskTests;
+			productReference = 8E875C0F2836342000B0FEE5 /* KoinzTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E875C182836342000B0FEE5 /* KoinzTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E875C292836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTaskUITests" */;
+			buildPhases = (
+				8E875C152836342000B0FEE5 /* Sources */,
+				8E875C162836342000B0FEE5 /* Frameworks */,
+				8E875C172836342000B0FEE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E875C1B2836342000B0FEE5 /* PBXTargetDependency */,
+			);
+			name = KoinzTaskUITests;
+			productName = KoinzTaskUITests;
+			productReference = 8E875C192836342000B0FEE5 /* KoinzTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E875BEE2836341E00B0FEE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					8E875BF52836341E00B0FEE5 = {
+						CreatedOnToolsVersion = 13.2;
+					};
+					8E875C0E2836342000B0FEE5 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 8E875BF52836341E00B0FEE5;
+					};
+					8E875C182836342000B0FEE5 = {
+						CreatedOnToolsVersion = 13.2;
+						TestTargetID = 8E875BF52836341E00B0FEE5;
+					};
+				};
+			};
+			buildConfigurationList = 8E875BF12836341E00B0FEE5 /* Build configuration list for PBXProject "KoinzTask" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E875BED2836341E00B0FEE5;
+			productRefGroup = 8E875BF72836341E00B0FEE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E875BF52836341E00B0FEE5 /* KoinzTask */,
+				8E875C0E2836342000B0FEE5 /* KoinzTaskTests */,
+				8E875C182836342000B0FEE5 /* KoinzTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E875BF42836341E00B0FEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E875C092836342000B0FEE5 /* LaunchScreen.storyboard in Resources */,
+				8E875C062836342000B0FEE5 /* Assets.xcassets in Resources */,
+				8E875C012836341E00B0FEE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E875C0D2836342000B0FEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E875C172836342000B0FEE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E875BF22836341E00B0FEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E875C042836341E00B0FEE5 /* KoinzTask.xcdatamodeld in Sources */,
+				8E875BFE2836341E00B0FEE5 /* ViewController.swift in Sources */,
+				8E875BFA2836341E00B0FEE5 /* AppDelegate.swift in Sources */,
+				8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E875C0B2836342000B0FEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E875C142836342000B0FEE5 /* KoinzTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E875C152836342000B0FEE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E875C1E2836342000B0FEE5 /* KoinzTaskUITests.swift in Sources */,
+				8E875C202836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E875C112836342000B0FEE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E875BF52836341E00B0FEE5 /* KoinzTask */;
+			targetProxy = 8E875C102836342000B0FEE5 /* PBXContainerItemProxy */;
+		};
+		8E875C1B2836342000B0FEE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E875BF52836341E00B0FEE5 /* KoinzTask */;
+			targetProxy = 8E875C1A2836342000B0FEE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E875BFF2836341E00B0FEE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E875C002836341E00B0FEE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E875C072836342000B0FEE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E875C082836342000B0FEE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E875C212836342000B0FEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E875C222836342000B0FEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E875C242836342000B0FEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJJ49RSDNW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoinzTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.KoinzTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E875C252836342000B0FEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJJ49RSDNW;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KoinzTask/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.KoinzTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E875C272836342000B0FEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJJ49RSDNW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.KoinzTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoinzTask.app/KoinzTask";
+			};
+			name = Debug;
+		};
+		8E875C282836342000B0FEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJJ49RSDNW;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.KoinzTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KoinzTask.app/KoinzTask";
+			};
+			name = Release;
+		};
+		8E875C2A2836342000B0FEE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJJ49RSDNW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.KoinzTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoinzTask;
+			};
+			name = Debug;
+		};
+		8E875C2B2836342000B0FEE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJJ49RSDNW;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Company.KoinzTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KoinzTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E875BF12836341E00B0FEE5 /* Build configuration list for PBXProject "KoinzTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E875C212836342000B0FEE5 /* Debug */,
+				8E875C222836342000B0FEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E875C232836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E875C242836342000B0FEE5 /* Debug */,
+				8E875C252836342000B0FEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E875C262836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E875C272836342000B0FEE5 /* Debug */,
+				8E875C282836342000B0FEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E875C292836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E875C2A2836342000B0FEE5 /* Debug */,
+				8E875C2B2836342000B0FEE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		8E875C022836341E00B0FEE5 /* KoinzTask.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				8E875C032836341E00B0FEE5 /* KoinzTask.xcdatamodel */,
+			);
+			currentVersion = 8E875C032836341E00B0FEE5 /* KoinzTask.xcdatamodel */;
+			path = KoinzTask.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 8E875BEE2836341E00B0FEE5 /* Project object */;
+}
