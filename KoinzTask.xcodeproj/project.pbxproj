@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B07E50E5D3D73E3F86F80FD /* Pods_KoinzTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305E5AB38C1F074B719DCC72 /* Pods_KoinzTask.framework */; };
 		8E875BFA2836341E00B0FEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BF92836341E00B0FEE5 /* AppDelegate.swift */; };
 		8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */; };
 		8E875BFE2836341E00B0FEE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BFD2836341E00B0FEE5 /* ViewController.swift */; };
@@ -17,6 +18,8 @@
 		8E875C142836342000B0FEE5 /* KoinzTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C132836342000B0FEE5 /* KoinzTaskTests.swift */; };
 		8E875C1E2836342000B0FEE5 /* KoinzTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */; };
 		8E875C202836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */; };
+		B1D2431A886C291117A24BEC /* Pods_KoinzTask_KoinzTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */; };
+		DDA81E77214EC01DC120E66D /* Pods_KoinzTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52DC1114ED664E5DD53DAA /* Pods_KoinzTaskTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		305E5AB38C1F074B719DCC72 /* Pods_KoinzTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoinzTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D52DC1114ED664E5DD53DAA /* Pods_KoinzTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoinzTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5475FA78F76359B1BED6BD38 /* Pods-KoinzTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTask.release.xcconfig"; path = "Target Support Files/Pods-KoinzTask/Pods-KoinzTask.release.xcconfig"; sourceTree = "<group>"; };
+		561DFA85ACF82502BB72052B /* Pods-KoinzTask-KoinzTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTask-KoinzTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-KoinzTask-KoinzTaskUITests/Pods-KoinzTask-KoinzTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		661BA468AF0416D39CE2C4AE /* Pods-KoinzTask-KoinzTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTask-KoinzTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-KoinzTask-KoinzTaskUITests/Pods-KoinzTask-KoinzTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		8E875BF62836341E00B0FEE5 /* KoinzTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoinzTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E875BF92836341E00B0FEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,10 @@
 		8E875C192836342000B0FEE5 /* KoinzTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoinzTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITests.swift; sourceTree = "<group>"; };
 		8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.release.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoinzTask_KoinzTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8F560180944E34FD043B97C /* Pods-KoinzTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTask.debug.xcconfig"; path = "Target Support Files/Pods-KoinzTask/Pods-KoinzTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B07E50E5D3D73E3F86F80FD /* Pods_KoinzTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA81E77214EC01DC120E66D /* Pods_KoinzTaskTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D2431A886C291117A24BEC /* Pods_KoinzTask_KoinzTaskUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45043540C021FC791B90C251 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D8F560180944E34FD043B97C /* Pods-KoinzTask.debug.xcconfig */,
+				5475FA78F76359B1BED6BD38 /* Pods-KoinzTask.release.xcconfig */,
+				561DFA85ACF82502BB72052B /* Pods-KoinzTask-KoinzTaskUITests.debug.xcconfig */,
+				661BA468AF0416D39CE2C4AE /* Pods-KoinzTask-KoinzTaskUITests.release.xcconfig */,
+				B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */,
+				ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		8E875BED2836341E00B0FEE5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +114,8 @@
 				8E875C122836342000B0FEE5 /* KoinzTaskTests */,
 				8E875C1C2836342000B0FEE5 /* KoinzTaskUITests */,
 				8E875BF72836341E00B0FEE5 /* Products */,
+				45043540C021FC791B90C251 /* Pods */,
+				F37A44812EAD72658E53372A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +161,16 @@
 			path = KoinzTaskUITests;
 			sourceTree = "<group>";
 		};
+		F37A44812EAD72658E53372A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				305E5AB38C1F074B719DCC72 /* Pods_KoinzTask.framework */,
+				D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */,
+				4D52DC1114ED664E5DD53DAA /* Pods_KoinzTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E875C232836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTask" */;
 			buildPhases = (
+				94095A01DB25190AEE70D18E /* [CP] Check Pods Manifest.lock */,
 				8E875BF22836341E00B0FEE5 /* Sources */,
 				8E875BF32836341E00B0FEE5 /* Frameworks */,
 				8E875BF42836341E00B0FEE5 /* Resources */,
+				E5641F4EC43A702E730FBB9F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -154,6 +197,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E875C262836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTaskTests" */;
 			buildPhases = (
+				72E27F067434692150950ACA /* [CP] Check Pods Manifest.lock */,
 				8E875C0B2836342000B0FEE5 /* Sources */,
 				8E875C0C2836342000B0FEE5 /* Frameworks */,
 				8E875C0D2836342000B0FEE5 /* Resources */,
@@ -172,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8E875C292836342000B0FEE5 /* Build configuration list for PBXNativeTarget "KoinzTaskUITests" */;
 			buildPhases = (
+				9C46A1810A9625BCD89D5175 /* [CP] Check Pods Manifest.lock */,
 				8E875C152836342000B0FEE5 /* Sources */,
 				8E875C162836342000B0FEE5 /* Frameworks */,
 				8E875C172836342000B0FEE5 /* Resources */,
+				8A21F7B17ED43871A50D7F58 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -255,6 +301,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72E27F067434692150950ACA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoinzTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A21F7B17ED43871A50D7F58 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoinzTask-KoinzTaskUITests/Pods-KoinzTask-KoinzTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoinzTask-KoinzTaskUITests/Pods-KoinzTask-KoinzTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KoinzTask-KoinzTaskUITests/Pods-KoinzTask-KoinzTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		94095A01DB25190AEE70D18E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoinzTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C46A1810A9625BCD89D5175 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KoinzTask-KoinzTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5641F4EC43A702E730FBB9F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoinzTask/Pods-KoinzTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KoinzTask/Pods-KoinzTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KoinzTask/Pods-KoinzTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8E875BF22836341E00B0FEE5 /* Sources */ = {
@@ -438,6 +587,7 @@
 		};
 		8E875C242836342000B0FEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8F560180944E34FD043B97C /* Pods-KoinzTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -466,6 +616,7 @@
 		};
 		8E875C252836342000B0FEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5475FA78F76359B1BED6BD38 /* Pods-KoinzTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -494,6 +645,7 @@
 		};
 		8E875C272836342000B0FEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -514,6 +666,7 @@
 		};
 		8E875C282836342000B0FEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -534,6 +687,7 @@
 		};
 		8E875C2A2836342000B0FEE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 561DFA85ACF82502BB72052B /* Pods-KoinzTask-KoinzTaskUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +706,7 @@
 		};
 		8E875C2B2836342000B0FEE5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 661BA468AF0416D39CE2C4AE /* Pods-KoinzTask-KoinzTaskUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
