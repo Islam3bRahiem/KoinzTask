@@ -10,7 +10,7 @@
 		8B07E50E5D3D73E3F86F80FD /* Pods_KoinzTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 305E5AB38C1F074B719DCC72 /* Pods_KoinzTask.framework */; };
 		8E875BFA2836341E00B0FEE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BF92836341E00B0FEE5 /* AppDelegate.swift */; };
 		8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */; };
-		8E875BFE2836341E00B0FEE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BFD2836341E00B0FEE5 /* ViewController.swift */; };
+		8E875BFE2836341E00B0FEE5 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875BFD2836341E00B0FEE5 /* SearchViewController.swift */; };
 		8E875C012836341E00B0FEE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E875BFF2836341E00B0FEE5 /* Main.storyboard */; };
 		8E875C042836341E00B0FEE5 /* KoinzTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C022836341E00B0FEE5 /* KoinzTask.xcdatamodeld */; };
 		8E875C062836342000B0FEE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E875C052836342000B0FEE5 /* Assets.xcassets */; };
@@ -18,6 +18,20 @@
 		8E875C142836342000B0FEE5 /* KoinzTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C132836342000B0FEE5 /* KoinzTaskTests.swift */; };
 		8E875C1E2836342000B0FEE5 /* KoinzTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */; };
 		8E875C202836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */; };
+		8EBCC41B283654A900E6A421 /* NetworkFailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC419283654A900E6A421 /* NetworkFailScreen.swift */; };
+		8EBCC41C283654A900E6A421 /* NetworkFailScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCC41A283654A900E6A421 /* NetworkFailScreen.xib */; };
+		8EBCC420283654C300E6A421 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC41E283654C300E6A421 /* BaseController.swift */; };
+		8EBCC421283654C300E6A421 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC41F283654C300E6A421 /* BaseViewModel.swift */; };
+		8EBCC4272836551500E6A421 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC4262836551500E6A421 /* Navigator.swift */; };
+		8EBCC4292836551B00E6A421 /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC4282836551A00E6A421 /* SearchNavigator.swift */; };
+		8EBCC42B2836552E00E6A421 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC42A2836552E00E6A421 /* AppCoordinator.swift */; };
+		8EBCC42F2836557400E6A421 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC42D2836557400E6A421 /* UIApplicationExtension.swift */; };
+		8EBCC4302836557400E6A421 /* UITableViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC42E2836557400E6A421 /* UITableViewExtensions.swift */; };
+		8EBCC437283655B200E6A421 /* SearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC432283655B200E6A421 /* SearchRouter.swift */; };
+		8EBCC438283655B200E6A421 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC433283655B200E6A421 /* NetworkConstants.swift */; };
+		8EBCC439283655B200E6A421 /* ResponseCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC434283655B200E6A421 /* ResponseCode.swift */; };
+		8EBCC43A283655B200E6A421 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC435283655B200E6A421 /* NetworkClient.swift */; };
+		8EBCC43B283655B200E6A421 /* APIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC436283655B200E6A421 /* APIRouter.swift */; };
 		B1D2431A886C291117A24BEC /* Pods_KoinzTask_KoinzTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */; };
 		DDA81E77214EC01DC120E66D /* Pods_KoinzTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52DC1114ED664E5DD53DAA /* Pods_KoinzTaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -48,7 +62,7 @@
 		8E875BF62836341E00B0FEE5 /* KoinzTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoinzTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E875BF92836341E00B0FEE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8E875BFD2836341E00B0FEE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E875BFD2836341E00B0FEE5 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		8E875C002836341E00B0FEE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E875C032836341E00B0FEE5 /* KoinzTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KoinzTask.xcdatamodel; sourceTree = "<group>"; };
 		8E875C052836342000B0FEE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -59,6 +73,20 @@
 		8E875C192836342000B0FEE5 /* KoinzTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoinzTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITests.swift; sourceTree = "<group>"; };
 		8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8EBCC419283654A900E6A421 /* NetworkFailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFailScreen.swift; sourceTree = "<group>"; };
+		8EBCC41A283654A900E6A421 /* NetworkFailScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkFailScreen.xib; sourceTree = "<group>"; };
+		8EBCC41E283654C300E6A421 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		8EBCC41F283654C300E6A421 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8EBCC4262836551500E6A421 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		8EBCC4282836551A00E6A421 /* SearchNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
+		8EBCC42A2836552E00E6A421 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8EBCC42D2836557400E6A421 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		8EBCC42E2836557400E6A421 /* UITableViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtensions.swift; sourceTree = "<group>"; };
+		8EBCC432283655B200E6A421 /* SearchRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRouter.swift; sourceTree = "<group>"; };
+		8EBCC433283655B200E6A421 /* NetworkConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
+		8EBCC434283655B200E6A421 /* ResponseCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseCode.swift; sourceTree = "<group>"; };
+		8EBCC435283655B200E6A421 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		8EBCC436283655B200E6A421 /* APIRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIRouter.swift; sourceTree = "<group>"; };
 		ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.release.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoinzTask_KoinzTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,8 +131,38 @@
 				B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */,
 				ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		8E7FC2712836517B0016F5C3 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC41D283654B300E6A421 /* Core */,
+				8EBCC4172836548F00E6A421 /* Themes */,
+				8E7FC2722836517D0016F5C3 /* SupportFiles */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8E7FC2722836517D0016F5C3 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8E875C0A2836342000B0FEE5 /* Info.plist */,
+				8E875C072836342000B0FEE5 /* LaunchScreen.storyboard */,
+				8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */,
+				8E875BF92836341E00B0FEE5 /* AppDelegate.swift */,
+				8E875C052836342000B0FEE5 /* Assets.xcassets */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		8E7FC273283651B50016F5C3 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				8E875BFF2836341E00B0FEE5 /* Main.storyboard */,
+				8E875BFD2836341E00B0FEE5 /* SearchViewController.swift */,
+			);
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		8E875BED2836341E00B0FEE5 = {
@@ -132,13 +190,11 @@
 		8E875BF82836341E00B0FEE5 /* KoinzTask */ = {
 			isa = PBXGroup;
 			children = (
-				8E875BF92836341E00B0FEE5 /* AppDelegate.swift */,
-				8E875BFB2836341E00B0FEE5 /* SceneDelegate.swift */,
-				8E875BFD2836341E00B0FEE5 /* ViewController.swift */,
-				8E875BFF2836341E00B0FEE5 /* Main.storyboard */,
-				8E875C052836342000B0FEE5 /* Assets.xcassets */,
-				8E875C072836342000B0FEE5 /* LaunchScreen.storyboard */,
-				8E875C0A2836342000B0FEE5 /* Info.plist */,
+				8EBCC422283654E400E6A421 /* Utility */,
+				8EBCC42C2836555E00E6A421 /* Extensions */,
+				8E7FC2712836517B0016F5C3 /* Application */,
+				8EBCC4312836558C00E6A421 /* Network */,
+				8E7FC273283651B50016F5C3 /* Modules */,
 				8E875C022836341E00B0FEE5 /* KoinzTask.xcdatamodeld */,
 			);
 			path = KoinzTask;
@@ -159,6 +215,95 @@
 				8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */,
 			);
 			path = KoinzTaskUITests;
+			sourceTree = "<group>";
+		};
+		8EBCC4172836548F00E6A421 /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC4182836549800E6A421 /* NetworkFail */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		8EBCC4182836549800E6A421 /* NetworkFail */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC419283654A900E6A421 /* NetworkFailScreen.swift */,
+				8EBCC41A283654A900E6A421 /* NetworkFailScreen.xib */,
+			);
+			path = NetworkFail;
+			sourceTree = "<group>";
+		};
+		8EBCC41D283654B300E6A421 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC41E283654C300E6A421 /* BaseController.swift */,
+				8EBCC41F283654C300E6A421 /* BaseViewModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8EBCC422283654E400E6A421 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC423283654E900E6A421 /* Coordinator */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		8EBCC423283654E900E6A421 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC42A2836552E00E6A421 /* AppCoordinator.swift */,
+				8EBCC4252836550400E6A421 /* Protocols */,
+				8EBCC424283654EF00E6A421 /* Navigators */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		8EBCC424283654EF00E6A421 /* Navigators */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC4282836551A00E6A421 /* SearchNavigator.swift */,
+			);
+			path = Navigators;
+			sourceTree = "<group>";
+		};
+		8EBCC4252836550400E6A421 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC4262836551500E6A421 /* Navigator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8EBCC42C2836555E00E6A421 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC42D2836557400E6A421 /* UIApplicationExtension.swift */,
+				8EBCC42E2836557400E6A421 /* UITableViewExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8EBCC4312836558C00E6A421 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC436283655B200E6A421 /* APIRouter.swift */,
+				8EBCC435283655B200E6A421 /* NetworkClient.swift */,
+				8EBCC433283655B200E6A421 /* NetworkConstants.swift */,
+				8EBCC434283655B200E6A421 /* ResponseCode.swift */,
+				8EBCC43C283655C800E6A421 /* Routers */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8EBCC43C283655C800E6A421 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC432283655B200E6A421 /* SearchRouter.swift */,
+			);
+			path = Routers;
 			sourceTree = "<group>";
 		};
 		F37A44812EAD72658E53372A /* Frameworks */ = {
@@ -280,6 +425,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBCC41C283654A900E6A421 /* NetworkFailScreen.xib in Resources */,
 				8E875C092836342000B0FEE5 /* LaunchScreen.storyboard in Resources */,
 				8E875C062836342000B0FEE5 /* Assets.xcassets in Resources */,
 				8E875C012836341E00B0FEE5 /* Main.storyboard in Resources */,
@@ -410,10 +556,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EBCC438283655B200E6A421 /* NetworkConstants.swift in Sources */,
 				8E875C042836341E00B0FEE5 /* KoinzTask.xcdatamodeld in Sources */,
-				8E875BFE2836341E00B0FEE5 /* ViewController.swift in Sources */,
+				8EBCC439283655B200E6A421 /* ResponseCode.swift in Sources */,
+				8EBCC41B283654A900E6A421 /* NetworkFailScreen.swift in Sources */,
+				8EBCC42B2836552E00E6A421 /* AppCoordinator.swift in Sources */,
+				8EBCC4302836557400E6A421 /* UITableViewExtensions.swift in Sources */,
+				8E875BFE2836341E00B0FEE5 /* SearchViewController.swift in Sources */,
+				8EBCC43A283655B200E6A421 /* NetworkClient.swift in Sources */,
+				8EBCC421283654C300E6A421 /* BaseViewModel.swift in Sources */,
+				8EBCC43B283655B200E6A421 /* APIRouter.swift in Sources */,
 				8E875BFA2836341E00B0FEE5 /* AppDelegate.swift in Sources */,
+				8EBCC42F2836557400E6A421 /* UIApplicationExtension.swift in Sources */,
+				8EBCC4272836551500E6A421 /* Navigator.swift in Sources */,
+				8EBCC420283654C300E6A421 /* BaseController.swift in Sources */,
 				8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */,
+				8EBCC4292836551B00E6A421 /* SearchNavigator.swift in Sources */,
+				8EBCC437283655B200E6A421 /* SearchRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,7 +679,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -575,7 +734,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -595,12 +754,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJJ49RSDNW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KoinzTask/Info.plist;
+				INFOPLIST_FILE = KoinzTask/Application/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -624,12 +784,13 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GJJ49RSDNW;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = KoinzTask/Info.plist;
+				INFOPLIST_FILE = KoinzTask/Application/SupportFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
