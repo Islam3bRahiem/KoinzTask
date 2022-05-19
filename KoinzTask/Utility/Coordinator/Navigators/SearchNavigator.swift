@@ -22,8 +22,7 @@ class SearchNavigator: Navigator {
     func viewController(for destination: Destination, coordinator: Coordinator) -> UIViewController {
         switch destination {
         case .Search:
-            let viewModel = SearchViewModel()
-            let scene = SearchVC(viewModel: viewModel, coordinator: coordinator)
+            let scene = UIViewController()
             return scene
         }
     }

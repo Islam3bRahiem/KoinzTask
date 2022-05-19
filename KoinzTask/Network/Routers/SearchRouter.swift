@@ -9,7 +9,7 @@ import Foundation
 import Alamofire
 
 enum SearchRouter: APIRouter {
-    case forecast(String)
+    case forecast(String, Int)
     
     var method: HTTPMethod {
         switch self {
@@ -21,19 +21,19 @@ enum SearchRouter: APIRouter {
     var path: String {
         switch self {
         case .forecast:
-            return "forecast"
+            return ""
         }
     }
     
     var parameters: Parameters? {
         switch self {
-        case .forecast(let key):
+        case .forecast(let key, let page):
             let parameters = [
-                "method": "flickr.photos.search",
+                "method": NetworkConstants.EndPoint.search.rawValue,
                 "format": NetworkConstants.format,
                 "nojsoncallback": 50,
                 "text": key,
-                "page": 1,
+                "page": page,
                 "per_page": 20,
                 "api_key":NetworkConstants.apiKey
             ] as [String : Any]

@@ -33,6 +33,17 @@
 		8EBCC4462836604E00E6A421 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC4442836604E00E6A421 /* SearchVC.swift */; };
 		8EBCC4472836604E00E6A421 /* SearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCC4452836604E00E6A421 /* SearchVC.xib */; };
 		8EBCC44D283662D600E6A421 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC44C283662D600E6A421 /* SearchViewModel.swift */; };
+		8EBCC44F283665E600E6A421 /* SearchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC44E283665E600E6A421 /* SearchRepository.swift */; };
+		8EBCC4512836663500E6A421 /* SearchResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC4502836663500E6A421 /* SearchResponseModel.swift */; };
+		8EBCC453283666CA00E6A421 /* SearchUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC452283666CA00E6A421 /* SearchUseCase.swift */; };
+		8EBCC457283672FF00E6A421 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC455283672FF00E6A421 /* PhotoCell.swift */; };
+		8EBCC458283672FF00E6A421 /* PhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCC456283672FF00E6A421 /* PhotoCell.xib */; };
+		8EBCC45A283678B900E6A421 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC459283678B900E6A421 /* PhotoViewModel.swift */; };
+		8EBCC45C28367A2900E6A421 /* UIImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC45B28367A2900E6A421 /* UIImageViewExtensions.swift */; };
+		8EBCC46128367FD600E6A421 /* EmptyScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCC45E28367FD600E6A421 /* EmptyScreen.xib */; };
+		8EBCC46228367FD600E6A421 /* EmptyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC45F28367FD600E6A421 /* EmptyScreen.swift */; };
+		8EBCC46328367FD600E6A421 /* EmptyScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC46028367FD600E6A421 /* EmptyScreenContract.swift */; };
+		8EBCC467283682FF00E6A421 /* SwipeRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */; };
 		B1D2431A886C291117A24BEC /* Pods_KoinzTask_KoinzTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */; };
 		DDA81E77214EC01DC120E66D /* Pods_KoinzTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52DC1114ED664E5DD53DAA /* Pods_KoinzTaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -89,6 +100,17 @@
 		8EBCC4442836604E00E6A421 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		8EBCC4452836604E00E6A421 /* SearchVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchVC.xib; sourceTree = "<group>"; };
 		8EBCC44C283662D600E6A421 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		8EBCC44E283665E600E6A421 /* SearchRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRepository.swift; sourceTree = "<group>"; };
+		8EBCC4502836663500E6A421 /* SearchResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResponseModel.swift; sourceTree = "<group>"; };
+		8EBCC452283666CA00E6A421 /* SearchUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUseCase.swift; sourceTree = "<group>"; };
+		8EBCC455283672FF00E6A421 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		8EBCC456283672FF00E6A421 /* PhotoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCell.xib; sourceTree = "<group>"; };
+		8EBCC459283678B900E6A421 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
+		8EBCC45B28367A2900E6A421 /* UIImageViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtensions.swift; sourceTree = "<group>"; };
+		8EBCC45E28367FD600E6A421 /* EmptyScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EmptyScreen.xib; sourceTree = "<group>"; };
+		8EBCC45F28367FD600E6A421 /* EmptyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreen.swift; sourceTree = "<group>"; };
+		8EBCC46028367FD600E6A421 /* EmptyScreenContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreenContract.swift; sourceTree = "<group>"; };
+		8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRefresh.swift; sourceTree = "<group>"; };
 		ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.release.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoinzTask_KoinzTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -195,9 +217,9 @@
 			isa = PBXGroup;
 			children = (
 				8EBCC422283654E400E6A421 /* Utility */,
-				8EBCC42C2836555E00E6A421 /* Extensions */,
-				8E7FC2712836517B0016F5C3 /* Application */,
 				8EBCC4312836558C00E6A421 /* Network */,
+				8E7FC2712836517B0016F5C3 /* Application */,
+				8EBCC465283682F800E6A421 /* Helpers */,
 				8E7FC273283651B50016F5C3 /* Modules */,
 				8E875C022836341E00B0FEE5 /* KoinzTask.xcdatamodeld */,
 			);
@@ -224,6 +246,7 @@
 		8EBCC4172836548F00E6A421 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCC45D28367FAE00E6A421 /* EmptyScreen */,
 				8EBCC4182836549800E6A421 /* NetworkFail */,
 			);
 			path = Themes;
@@ -285,6 +308,7 @@
 			isa = PBXGroup;
 			children = (
 				8EBCC42D2836557400E6A421 /* UIApplicationExtension.swift */,
+				8EBCC45B28367A2900E6A421 /* UIImageViewExtensions.swift */,
 				8EBCC42E2836557400E6A421 /* UITableViewExtensions.swift */,
 			);
 			path = Extensions;
@@ -293,11 +317,11 @@
 		8EBCC4312836558C00E6A421 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCC43C283655C800E6A421 /* Routers */,
 				8EBCC436283655B200E6A421 /* APIRouter.swift */,
 				8EBCC435283655B200E6A421 /* NetworkClient.swift */,
 				8EBCC433283655B200E6A421 /* NetworkConstants.swift */,
 				8EBCC434283655B200E6A421 /* ResponseCode.swift */,
-				8EBCC43C283655C800E6A421 /* Routers */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -321,6 +345,7 @@
 		8EBCC449283662B000E6A421 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCC454283672EA00E6A421 /* Photo Cell */,
 				8EBCC4452836604E00E6A421 /* SearchVC.xib */,
 				8EBCC4442836604E00E6A421 /* SearchVC.swift */,
 			);
@@ -330,6 +355,7 @@
 		8EBCC44A283662B200E6A421 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCC4502836663500E6A421 /* SearchResponseModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -337,8 +363,39 @@
 		8EBCC44B283662B500E6A421 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCC44E283665E600E6A421 /* SearchRepository.swift */,
+				8EBCC452283666CA00E6A421 /* SearchUseCase.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		8EBCC454283672EA00E6A421 /* Photo Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC456283672FF00E6A421 /* PhotoCell.xib */,
+				8EBCC455283672FF00E6A421 /* PhotoCell.swift */,
+				8EBCC459283678B900E6A421 /* PhotoViewModel.swift */,
+			);
+			path = "Photo Cell";
+			sourceTree = "<group>";
+		};
+		8EBCC45D28367FAE00E6A421 /* EmptyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC45F28367FD600E6A421 /* EmptyScreen.swift */,
+				8EBCC45E28367FD600E6A421 /* EmptyScreen.xib */,
+				8EBCC46028367FD600E6A421 /* EmptyScreenContract.swift */,
+			);
+			path = EmptyScreen;
+			sourceTree = "<group>";
+		};
+		8EBCC465283682F800E6A421 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC42C2836555E00E6A421 /* Extensions */,
+				8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		F37A44812EAD72658E53372A /* Frameworks */ = {
@@ -463,7 +520,9 @@
 				8EBCC4472836604E00E6A421 /* SearchVC.xib in Resources */,
 				8EBCC41C283654A900E6A421 /* NetworkFailScreen.xib in Resources */,
 				8E875C092836342000B0FEE5 /* LaunchScreen.storyboard in Resources */,
+				8EBCC46128367FD600E6A421 /* EmptyScreen.xib in Resources */,
 				8E875C062836342000B0FEE5 /* Assets.xcassets in Resources */,
+				8EBCC458283672FF00E6A421 /* PhotoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,19 +655,28 @@
 				8EBCC439283655B200E6A421 /* ResponseCode.swift in Sources */,
 				8EBCC41B283654A900E6A421 /* NetworkFailScreen.swift in Sources */,
 				8EBCC42B2836552E00E6A421 /* AppCoordinator.swift in Sources */,
+				8EBCC45A283678B900E6A421 /* PhotoViewModel.swift in Sources */,
 				8EBCC4302836557400E6A421 /* UITableViewExtensions.swift in Sources */,
 				8EBCC44D283662D600E6A421 /* SearchViewModel.swift in Sources */,
 				8EBCC43A283655B200E6A421 /* NetworkClient.swift in Sources */,
 				8EBCC421283654C300E6A421 /* BaseViewModel.swift in Sources */,
+				8EBCC45C28367A2900E6A421 /* UIImageViewExtensions.swift in Sources */,
+				8EBCC467283682FF00E6A421 /* SwipeRefresh.swift in Sources */,
 				8EBCC43B283655B200E6A421 /* APIRouter.swift in Sources */,
 				8E875BFA2836341E00B0FEE5 /* AppDelegate.swift in Sources */,
 				8EBCC42F2836557400E6A421 /* UIApplicationExtension.swift in Sources */,
 				8EBCC4462836604E00E6A421 /* SearchVC.swift in Sources */,
 				8EBCC4272836551500E6A421 /* Navigator.swift in Sources */,
+				8EBCC453283666CA00E6A421 /* SearchUseCase.swift in Sources */,
+				8EBCC46328367FD600E6A421 /* EmptyScreenContract.swift in Sources */,
 				8EBCC420283654C300E6A421 /* BaseController.swift in Sources */,
 				8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */,
 				8EBCC4292836551B00E6A421 /* SearchNavigator.swift in Sources */,
+				8EBCC46228367FD600E6A421 /* EmptyScreen.swift in Sources */,
 				8EBCC437283655B200E6A421 /* SearchRouter.swift in Sources */,
+				8EBCC4512836663500E6A421 /* SearchResponseModel.swift in Sources */,
+				8EBCC457283672FF00E6A421 /* PhotoCell.swift in Sources */,
+				8EBCC44F283665E600E6A421 /* SearchRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

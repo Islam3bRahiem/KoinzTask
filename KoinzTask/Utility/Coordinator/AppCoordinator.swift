@@ -38,7 +38,9 @@ class AppCoordinator: Coordinator {
     }
     
     func start(){
-        let viewModel = SearchViewModel()
+        let searchRepo = SearchRepositoryImpl()
+        let searchUseCase = SearchUseCase(searchRepository: searchRepo)
+        let viewModel = SearchViewModel(searchUseCase: searchUseCase)
         let scene = SearchVC(viewModel: viewModel, coordinator: self)
         window.rootViewController = scene
         window.makeKeyAndVisible()

@@ -8,7 +8,12 @@
 import Foundation
 import Alamofire
 
-class NetworkClient {
+
+protocol NetworkClientProtocol {
+    func performRequest<T: Decodable>(_ object: T.Type, router: APIRouter, completion: @escaping ((Result<T, Error>) -> Void))
+}
+
+class NetworkClient: NetworkClientProtocol {
     
     func performRequest<T: Decodable>(_ object: T.Type, router: APIRouter, completion: @escaping ((Result<T, Error>) -> Void)) {
         AF.request(router).responseJSON { (response) in
@@ -20,5 +25,5 @@ class NetworkClient {
                 completion(.failure(error))
             }
         }
-    }
+    }    
 }
