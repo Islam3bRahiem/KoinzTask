@@ -44,6 +44,7 @@
 		8EBCC46228367FD600E6A421 /* EmptyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC45F28367FD600E6A421 /* EmptyScreen.swift */; };
 		8EBCC46328367FD600E6A421 /* EmptyScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC46028367FD600E6A421 /* EmptyScreenContract.swift */; };
 		8EBCC467283682FF00E6A421 /* SwipeRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */; };
+		8EBCC46A283688BE00E6A421 /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC469283688BE00E6A421 /* FullImageView.swift */; };
 		B1D2431A886C291117A24BEC /* Pods_KoinzTask_KoinzTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */; };
 		DDA81E77214EC01DC120E66D /* Pods_KoinzTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52DC1114ED664E5DD53DAA /* Pods_KoinzTaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -111,6 +112,7 @@
 		8EBCC45F28367FD600E6A421 /* EmptyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreen.swift; sourceTree = "<group>"; };
 		8EBCC46028367FD600E6A421 /* EmptyScreenContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreenContract.swift; sourceTree = "<group>"; };
 		8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRefresh.swift; sourceTree = "<group>"; };
+		8EBCC469283688BE00E6A421 /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
 		ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.release.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoinzTask_KoinzTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -246,6 +248,7 @@
 		8EBCC4172836548F00E6A421 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
+				8EBCC468283688B700E6A421 /* FullImageView */,
 				8EBCC45D28367FAE00E6A421 /* EmptyScreen */,
 				8EBCC4182836549800E6A421 /* NetworkFail */,
 			);
@@ -396,6 +399,14 @@
 				8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8EBCC468283688B700E6A421 /* FullImageView */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC469283688BE00E6A421 /* FullImageView.swift */,
+			);
+			path = FullImageView;
 			sourceTree = "<group>";
 		};
 		F37A44812EAD72658E53372A /* Frameworks */ = {
@@ -669,6 +680,7 @@
 				8EBCC4272836551500E6A421 /* Navigator.swift in Sources */,
 				8EBCC453283666CA00E6A421 /* SearchUseCase.swift in Sources */,
 				8EBCC46328367FD600E6A421 /* EmptyScreenContract.swift in Sources */,
+				8EBCC46A283688BE00E6A421 /* FullImageView.swift in Sources */,
 				8EBCC420283654C300E6A421 /* BaseController.swift in Sources */,
 				8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */,
 				8EBCC4292836551B00E6A421 /* SearchNavigator.swift in Sources */,

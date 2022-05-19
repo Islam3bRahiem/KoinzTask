@@ -11,13 +11,6 @@ import UIKit
 // MARK: - Methods
 extension UITableView {
 
-    /// SwifterSwift: check if table view is empty or not.
-    ///
-    /// - Returns: isEmpty or not.
-    var isEmpty: Bool {
-        return self.numberOfRows() == 0
-    }
-
     /// SwifterSwift: Dequeue reusable UITableViewCell using class name
     ///
     /// - Parameter name: UITableViewCell type
