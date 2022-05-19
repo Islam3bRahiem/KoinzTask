@@ -30,7 +30,6 @@ extension Navigator {
         case .push:
             coordinator.navigationController?.pushViewController(viewController, animated: true)
         case .present:
-            viewController.modalPresentationStyle = .overFullScreen
             UIApplication.topMostController().present(viewController, animated: true, completion: nil)
         case .presentWithNavigation:
             let newVC = self.viewController(for: destination, coordinator: coordinator)

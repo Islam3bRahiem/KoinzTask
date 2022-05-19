@@ -10,7 +10,9 @@ import RxSwift
 import RxCocoa
 
 protocol ViewModel {
-
+    var isLoading: PublishSubject<Bool> { get }
+    var displayToastMessage: PublishSubject<String> { get }
+    var noInternetConnection: PublishSubject<String> { get }
 }
 
 class BaseViewModel: ViewModel {

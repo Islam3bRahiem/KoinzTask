@@ -29,8 +29,8 @@ class AppCoordinator: Coordinator {
         return nil
     }
     
-    init(window: UIWindow = UIWindow()) {
-        self.window = window
+    init(windowScene: UIWindowScene) {
+        self.window = UIWindow(windowScene: windowScene)
         //UIAppearance
         if #available(iOS 13.0, *) {
             window.overrideUserInterfaceStyle = .light
@@ -38,8 +38,8 @@ class AppCoordinator: Coordinator {
     }
     
     func start(){
-        let scene = UIViewController()
-        scene.view.backgroundColor = .green
+        let viewModel = SearchViewModel()
+        let scene = SearchVC(viewModel: viewModel, coordinator: self)
         window.rootViewController = scene
         window.makeKeyAndVisible()
     }
