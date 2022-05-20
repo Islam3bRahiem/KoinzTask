@@ -7,14 +7,22 @@
 
 import UIKit
 import CoreData
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private let appSecret = "5e4dadf8-9743-4bd4-ad0d-243b187a0e00"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        //AppCenter
+        AppCenter.start(withAppSecret: appSecret, services:[
+          Analytics.self,
+          Crashes.self
+        ])
         return true
     }
 

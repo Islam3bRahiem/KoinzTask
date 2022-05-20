@@ -1,0 +1,53 @@
+PODS:
+  - Alamofire (5.4.3)
+  - AppCenter (4.4.2):
+    - AppCenter/Analytics (= 4.4.2)
+    - AppCenter/Crashes (= 4.4.2)
+  - AppCenter/Analytics (4.4.2):
+    - AppCenter/Core
+  - AppCenter/Core (4.4.2)
+  - AppCenter/Crashes (4.4.2):
+    - AppCenter/Core
+  - IQKeyboardManagerSwift (6.5.9)
+  - Kingfisher (7.1.2)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 5.4.3)
+  - AppCenter
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - RxCocoa
+  - RxSwift
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AppCenter
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  AppCenter: b0eca112a27b71e97488ffa1949ee38c7abd4b79
+  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: 00fd7b593e89640a3832b9eba071e00e45d37a0c
+
+COCOAPODS: 1.11.2
