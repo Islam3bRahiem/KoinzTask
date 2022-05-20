@@ -28,7 +28,6 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
     // Properties
     private let searchUseCase: SearchUseCase
     private var photosBehavior: BehaviorRelay<[PhotoViewModel]> = .init(value: [])
-    private let coreDataManager: CoreDataManagerOperation = CoreDataManager()
     private var currentPage: Int = 1
     private var canPaginate: Bool = true
 
@@ -58,7 +57,7 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
                 self.canPaginate = response.photos.page < response.photos.pages
                 self.currentPage = response.photos.page
                 responsePhotosViewModels.forEach { (model) in
-                    self.coreDataManager.save(page: response.photos.page, model.imageURL)
+                    CoreDataManager.shared.save(page: response.photos.page, model.imageURL)
                 }
             } else {
                 self.displayToastMessage.onNext(response.message ?? "")
@@ -66,20 +65,24 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
         } onError: { [weak self] (error) in
             guard let self = self else { return }
             self.isLoading.onNext(false)
-            self.coreDataManager.fetchImages(page: self.currentPage) { [weak self](photoEntities) in
-                guard let self = self else { return }
-                let responsePhotosViewModels = photoEntities.map(PhotoViewModel.init)
-                let allPhotos = self.photosBehavior.value + responsePhotosViewModels
-                self.photosBehavior.accept(allPhotos)
-                self.emptyTableView.onNext(allPhotos.isEmpty)
-                self.currentPage += 1
-            }
+            self.fetchPhotosFromCoreData()
         }.disposed(by: disposeBag)
     }
         
     func fetchMorePhotos(with key: String) {
         if canPaginate {
             self.searchForPhotos(with: key)
+        }
+    }
+    
+    private func fetchPhotosFromCoreData() {
+        CoreDataManager.shared.fetchImages(page: self.currentPage) { [weak self](photoEntities) in
+            guard let self = self else { return }
+            let responsePhotosViewModels = photoEntities.map(PhotoViewModel.init)
+            let allPhotos = self.photosBehavior.value + responsePhotosViewModels
+            self.photosBehavior.accept(allPhotos)
+            self.emptyTableView.onNext(allPhotos.isEmpty)
+            self.currentPage += 1
         }
     }
 }
