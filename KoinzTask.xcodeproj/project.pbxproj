@@ -16,8 +16,6 @@
 		8E875C142836342000B0FEE5 /* KoinzTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C132836342000B0FEE5 /* KoinzTaskTests.swift */; };
 		8E875C1E2836342000B0FEE5 /* KoinzTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */; };
 		8E875C202836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */; };
-		8EBCC41B283654A900E6A421 /* NetworkFailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC419283654A900E6A421 /* NetworkFailScreen.swift */; };
-		8EBCC41C283654A900E6A421 /* NetworkFailScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EBCC41A283654A900E6A421 /* NetworkFailScreen.xib */; };
 		8EBCC420283654C300E6A421 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC41E283654C300E6A421 /* BaseController.swift */; };
 		8EBCC421283654C300E6A421 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC41F283654C300E6A421 /* BaseViewModel.swift */; };
 		8EBCC4272836551500E6A421 /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC4262836551500E6A421 /* Navigator.swift */; };
@@ -44,7 +42,7 @@
 		8EBCC46228367FD600E6A421 /* EmptyScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC45F28367FD600E6A421 /* EmptyScreen.swift */; };
 		8EBCC46328367FD600E6A421 /* EmptyScreenContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC46028367FD600E6A421 /* EmptyScreenContract.swift */; };
 		8EBCC467283682FF00E6A421 /* SwipeRefresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */; };
-		8EBCC46A283688BE00E6A421 /* FullImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC469283688BE00E6A421 /* FullImageView.swift */; };
+		8EBCC46A283688BE00E6A421 /* FullImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCC469283688BE00E6A421 /* FullImageViewController.swift */; };
 		B1D2431A886C291117A24BEC /* Pods_KoinzTask_KoinzTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */; };
 		DDA81E77214EC01DC120E66D /* Pods_KoinzTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D52DC1114ED664E5DD53DAA /* Pods_KoinzTaskTests.framework */; };
 /* End PBXBuildFile section */
@@ -84,8 +82,6 @@
 		8E875C192836342000B0FEE5 /* KoinzTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoinzTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E875C1D2836342000B0FEE5 /* KoinzTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITests.swift; sourceTree = "<group>"; };
 		8E875C1F2836342000B0FEE5 /* KoinzTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoinzTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		8EBCC419283654A900E6A421 /* NetworkFailScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkFailScreen.swift; sourceTree = "<group>"; };
-		8EBCC41A283654A900E6A421 /* NetworkFailScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NetworkFailScreen.xib; sourceTree = "<group>"; };
 		8EBCC41E283654C300E6A421 /* BaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
 		8EBCC41F283654C300E6A421 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		8EBCC4262836551500E6A421 /* Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
@@ -112,7 +108,7 @@
 		8EBCC45F28367FD600E6A421 /* EmptyScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreen.swift; sourceTree = "<group>"; };
 		8EBCC46028367FD600E6A421 /* EmptyScreenContract.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyScreenContract.swift; sourceTree = "<group>"; };
 		8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeRefresh.swift; sourceTree = "<group>"; };
-		8EBCC469283688BE00E6A421 /* FullImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageView.swift; sourceTree = "<group>"; };
+		8EBCC469283688BE00E6A421 /* FullImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullImageViewController.swift; sourceTree = "<group>"; };
 		ABC72851BF47155430871C06 /* Pods-KoinzTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.release.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.release.xcconfig"; sourceTree = "<group>"; };
 		B0A5330A5D0D627E38B6972A /* Pods-KoinzTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoinzTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-KoinzTaskTests/Pods-KoinzTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3C14894327023C23F84153B /* Pods_KoinzTask_KoinzTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoinzTask_KoinzTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -185,10 +181,7 @@
 		8E7FC273283651B50016F5C3 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCC44B283662B500E6A421 /* Domain */,
-				8EBCC44A283662B200E6A421 /* Model */,
-				8EBCC449283662B000E6A421 /* View */,
-				8EBCC448283662AB00E6A421 /* ViewModel */,
+				8E8D02F12837ABE700DF2CD0 /* Search */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -245,23 +238,24 @@
 			path = KoinzTaskUITests;
 			sourceTree = "<group>";
 		};
+		8E8D02F12837ABE700DF2CD0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCC44B283662B500E6A421 /* Domain */,
+				8EBCC44A283662B200E6A421 /* Model */,
+				8EBCC449283662B000E6A421 /* View */,
+				8EBCC448283662AB00E6A421 /* ViewModel */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
 		8EBCC4172836548F00E6A421 /* Themes */ = {
 			isa = PBXGroup;
 			children = (
 				8EBCC468283688B700E6A421 /* FullImageView */,
 				8EBCC45D28367FAE00E6A421 /* EmptyScreen */,
-				8EBCC4182836549800E6A421 /* NetworkFail */,
 			);
 			path = Themes;
-			sourceTree = "<group>";
-		};
-		8EBCC4182836549800E6A421 /* NetworkFail */ = {
-			isa = PBXGroup;
-			children = (
-				8EBCC419283654A900E6A421 /* NetworkFailScreen.swift */,
-				8EBCC41A283654A900E6A421 /* NetworkFailScreen.xib */,
-			);
-			path = NetworkFail;
 			sourceTree = "<group>";
 		};
 		8EBCC41D283654B300E6A421 /* Core */ = {
@@ -395,8 +389,8 @@
 		8EBCC465283682F800E6A421 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCC42C2836555E00E6A421 /* Extensions */,
 				8EBCC466283682FF00E6A421 /* SwipeRefresh.swift */,
+				8EBCC42C2836555E00E6A421 /* Extensions */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -404,7 +398,7 @@
 		8EBCC468283688B700E6A421 /* FullImageView */ = {
 			isa = PBXGroup;
 			children = (
-				8EBCC469283688BE00E6A421 /* FullImageView.swift */,
+				8EBCC469283688BE00E6A421 /* FullImageViewController.swift */,
 			);
 			path = FullImageView;
 			sourceTree = "<group>";
@@ -529,7 +523,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8EBCC4472836604E00E6A421 /* SearchVC.xib in Resources */,
-				8EBCC41C283654A900E6A421 /* NetworkFailScreen.xib in Resources */,
 				8E875C092836342000B0FEE5 /* LaunchScreen.storyboard in Resources */,
 				8EBCC46128367FD600E6A421 /* EmptyScreen.xib in Resources */,
 				8E875C062836342000B0FEE5 /* Assets.xcassets in Resources */,
@@ -664,7 +657,6 @@
 				8EBCC438283655B200E6A421 /* NetworkConstants.swift in Sources */,
 				8E875C042836341E00B0FEE5 /* KoinzTask.xcdatamodeld in Sources */,
 				8EBCC439283655B200E6A421 /* ResponseCode.swift in Sources */,
-				8EBCC41B283654A900E6A421 /* NetworkFailScreen.swift in Sources */,
 				8EBCC42B2836552E00E6A421 /* AppCoordinator.swift in Sources */,
 				8EBCC45A283678B900E6A421 /* PhotoViewModel.swift in Sources */,
 				8EBCC4302836557400E6A421 /* UITableViewExtensions.swift in Sources */,
@@ -680,7 +672,7 @@
 				8EBCC4272836551500E6A421 /* Navigator.swift in Sources */,
 				8EBCC453283666CA00E6A421 /* SearchUseCase.swift in Sources */,
 				8EBCC46328367FD600E6A421 /* EmptyScreenContract.swift in Sources */,
-				8EBCC46A283688BE00E6A421 /* FullImageView.swift in Sources */,
+				8EBCC46A283688BE00E6A421 /* FullImageViewController.swift in Sources */,
 				8EBCC420283654C300E6A421 /* BaseController.swift in Sources */,
 				8E875BFC2836341E00B0FEE5 /* SceneDelegate.swift in Sources */,
 				8EBCC4292836551B00E6A421 /* SearchNavigator.swift in Sources */,

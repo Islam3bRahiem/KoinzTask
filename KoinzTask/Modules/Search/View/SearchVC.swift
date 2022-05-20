@@ -58,6 +58,12 @@ class SearchVC: BaseController<SearchViewModel> {
                                          cellType: PhotoCell.self)) { index, model, cell in
                 cell.bind(model)
         }.disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(PhotoViewModel.self).subscribe { [weak self] (model) in
+            guard let self = self,
+            let model = model.element else { return }
+            self.coordinator.Search.navigate(to: .FullImage(model.imageURL), with: .present)
+        }.disposed(by: disposeBag)
     }
     
 }

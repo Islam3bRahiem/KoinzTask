@@ -60,7 +60,7 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
         } onError: { [weak self] (error) in
             guard let self = self else { return }
             self.isLoading.onNext(false)
-            self.displayToastMessage.onNext(ResponseError.URLNotValid.localizedDescription)
+            self.displayToastMessage.onNext(error.localizedDescription)
         }.disposed(by: disposeBag)
     }
         

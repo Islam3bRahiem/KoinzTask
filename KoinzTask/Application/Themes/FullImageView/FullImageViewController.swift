@@ -7,56 +7,7 @@
 
 import Foundation
 import UIKit
-
-/// SwifterSwift: Open image on Full screen
-///
-/// - Parameter style: full screen
-/// - Returns: .
-@IBDesignable
-class FullImageView: UIImageView {
-    //Init
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        fullScreenWhenTapped()
-    }
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        fullScreenWhenTapped()
-    }
-
-    // MARK: - FUNCTIONS
-    override func layoutSubviews() {
-        super.layoutSubviews()
-    }
-    override func draw(_ rect: CGRect) {
-        if clipsToBounds {
-            layer.masksToBounds = true
-            layer.cornerRadius = 8
-            // Outer UIView to hold the Shadow
-            let shadow = UIView(frame: rect)
-            shadow.layer.cornerRadius = 8
-            shadow.layer.masksToBounds = false
-            shadow.addSubview(self)
-        }
-    }
-    override func awakeFromNib() {
-    }
-
-    //open Full screen
-    fileprivate func fullScreenWhenTapped() {
-        self.isUserInteractionEnabled = true
-        let tap1: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.imageClicked))
-        self.addGestureRecognizer(tap1)
-    }
-    //image on Full screen when clicked
-    @objc fileprivate func imageClicked() {
-        let scene = FullImageViewController(image: self.image)
-        scene.modalPresentationStyle = .overFullScreen
-        scene.modalTransitionStyle = .crossDissolve
-        UIApplication.topViewController()?.present(scene, animated: false, completion: nil)
-    }
-}
-
+import Kingfisher
 
 class FullImageViewController: UIViewController {
     lazy var mainView: UIView = {
@@ -87,19 +38,22 @@ class FullImageViewController: UIViewController {
         button.addTarget(self, action: #selector(self.closeBtnClicked(_:)), for: .touchUpInside)
         return button
     }()
-    var image: UIImage?
+    var image: String?
 
-    init(image: UIImage?) {
+    init(image: String?) {
         self.image = image
         super.init(nibName: nil, bundle: nil)
     }
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
     override func loadView() {
         super.loadView()
         view = mainView
     }
+    
     override func viewDidLoad() {
         mainView.addSubview(scrollView)
         scrollView.addSubview(displayImage)
@@ -108,8 +62,9 @@ class FullImageViewController: UIViewController {
         addDisplayImageConstraint()
         addBackButtonConstraint()
         setupGesture()
-        displayImage.image = image
+        displayImage.setImage(url: image)
     }
+    
     fileprivate func addScrollViewConstraint() {
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: view.topAnchor),
@@ -118,6 +73,7 @@ class FullImageViewController: UIViewController {
             scrollView.trailingAnchor.constraint(equalTo:view.trailingAnchor),
         ])
     }
+    
     fileprivate func addDisplayImageConstraint() {
         NSLayoutConstraint.activate([
             displayImage.topAnchor.constraint(equalTo: scrollView.topAnchor),
@@ -128,6 +84,7 @@ class FullImageViewController: UIViewController {
             displayImage.heightAnchor.constraint(equalTo: scrollView.heightAnchor, multiplier: 1)
         ])
     }
+    
     fileprivate func addBackButtonConstraint() {
         NSLayoutConstraint.activate([
             backButton.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
@@ -136,6 +93,7 @@ class FullImageViewController: UIViewController {
             backButton.heightAnchor.constraint(equalToConstant: 80)
         ])
     }
+    
     fileprivate func setupGesture() {
         let single = UITapGestureRecognizer(target: self, action: #selector(singleTap))
         let double = UITapGestureRecognizer(target: self, action: #selector(doubleTap(_:)))
@@ -144,10 +102,12 @@ class FullImageViewController: UIViewController {
         scrollView.addGestureRecognizer(single)
         scrollView.addGestureRecognizer(double)
     }
-    // MARK: Gesture
+    
+    // MARK: - Gesture
     @objc fileprivate func singleTap() {
         dismiss(animated: true, completion: nil)
     }
+    
     @objc fileprivate func doubleTap(_ gesture: UITapGestureRecognizer) {
         let point = gesture.location(in: scrollView)
         if scrollView.zoomScale == 1.0 {
@@ -156,6 +116,7 @@ class FullImageViewController: UIViewController {
             scrollView.setZoomScale(1.0, animated: true)
         }
     }
+    
     @objc fileprivate func closeBtnClicked(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }

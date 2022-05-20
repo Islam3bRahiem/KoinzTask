@@ -12,7 +12,7 @@ class SearchNavigator: Navigator {
     var coordinator: Coordinator
     
     enum Destination {
-        case Search
+        case FullImage(String)
     }
     
     required init(coordinator: Coordinator) {
@@ -21,8 +21,8 @@ class SearchNavigator: Navigator {
 
     func viewController(for destination: Destination, coordinator: Coordinator) -> UIViewController {
         switch destination {
-        case .Search:
-            let scene = UIViewController()
+        case .FullImage(let image):
+            let scene = FullImageViewController(image: image)
             return scene
         }
     }

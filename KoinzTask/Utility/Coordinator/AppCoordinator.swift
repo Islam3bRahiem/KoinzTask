@@ -50,4 +50,5 @@ class AppCoordinator: Coordinator {
         self.navigationController?.dismiss(animated: true, completion: nil)
         UIApplication.topMostController().dismiss(animated: true, completion: nil)
     }
+    
 }

@@ -16,10 +16,10 @@ enum NavigatorTypes {
 
 protocol Navigator {
     associatedtype Destination
-    func viewController(for destination: Destination, coordinator: Coordinator) -> UIViewController
     init(coordinator: Coordinator)
     var coordinator: Coordinator { get }
     func navigate(to destination: Destination, with navigationType: NavigatorTypes)
+    func viewController(for destination: Destination, coordinator: Coordinator) -> UIViewController
 }
 
 extension Navigator {
@@ -30,6 +30,7 @@ extension Navigator {
         case .push:
             coordinator.navigationController?.pushViewController(viewController, animated: true)
         case .present:
+            viewController.modalPresentationStyle = .overFullScreen
             UIApplication.topMostController().present(viewController, animated: true, completion: nil)
         case .presentWithNavigation:
             let newVC = self.viewController(for: destination, coordinator: coordinator)
