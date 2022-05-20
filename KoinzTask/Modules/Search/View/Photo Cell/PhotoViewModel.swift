@@ -11,6 +11,9 @@ class PhotoViewModel {
     
     var imageURL: String
     
+    init(_ url: String) {
+        self.imageURL = url
+    }
     init(_ model: PhotoModel) {
         //Schema :     http://farm​{farm}​.static.flickr.com/​{server}​/​{id}​_​{secret}​.jpg
         self.imageURL = "https://farm66.static.flickr.com/\(model.server)/\(model.id)_\(model.secret).jpg"

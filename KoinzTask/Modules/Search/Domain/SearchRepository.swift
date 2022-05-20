@@ -41,21 +41,4 @@ class SearchRepositoryImpl: SearchRepository {
         }
     }
 
-
-    //Private functions
-    private func saveDataToDataBase(_ response: SearchResponseModel) {
-//        CashManager.shared.save(response)
-    }
-    private func fetchDataFromDatabase(_ item: AnyObserver<SearchResponseModel>, for key: String, error: Error) {
-//        CashManager.shared.fetchCity(cityName: cityName) { [weak self](success, response) in
-//            guard self != nil else { return }
-//            if success {
-//                item.onNext(response!)
-//                item.onCompleted()
-//            } else {
-//                item.onError(error)
-//            }
-//        }
-    }
-
 }
