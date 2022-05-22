@@ -34,6 +34,10 @@ class PhotoCell: UITableViewCell {
     }
     
     func bind(_ vieWModel: PhotoViewModel) {
+        guard !vieWModel.imageURL.isEmpty else {
+            self.photoImg.image = vieWModel.adsBannerImg
+            return
+        }
         self.photoImg.setImage(url: vieWModel.imageURL)
     }
     

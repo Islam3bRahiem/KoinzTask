@@ -8,6 +8,7 @@
 import Foundation
 import RxSwift
 import RxCocoa
+import UIKit
 
 // MARK: - ... Inputs
 protocol SearchViewModelInput {
@@ -30,6 +31,7 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
     private var photosBehavior: BehaviorRelay<[PhotoViewModel]> = .init(value: [])
     private var currentPage: Int = 1
     private var canPaginate: Bool = true
+    private var adsBanndersCount = 5
 
     
     init(searchUseCase: SearchUseCase) {
@@ -50,7 +52,17 @@ class SearchViewModel: BaseViewModel, SearchViewModelInput, SearchViewModelOutpu
             self.isLoading.onNext(false)
             if response.stat == ResponseCode.Success.rawValue {
                 let responsePhotos = response.photos.photo
-                let responsePhotosViewModels = responsePhotos.map(PhotoViewModel.init)
+                var responsePhotosViewModels = responsePhotos.map(PhotoViewModel.init)
+                //Add an Ad Banner image every five photos
+                for x in 0 ..< responsePhotosViewModels.count + 1 {
+                    if x != 0,
+                       x % self.adsBanndersCount == 0 {
+                        let adImageModel = PhotoViewModel(UIImage(named: "ads"))
+                        let index = (x / self.adsBanndersCount) - 1 + x
+                        responsePhotosViewModels.insert(adImageModel, at: index)
+                    }
+                }
+                //Create All Photos
                 let allPhotos = self.photosBehavior.value + responsePhotosViewModels
                 self.photosBehavior.accept(allPhotos)
                 self.emptyTableView.onNext(allPhotos.isEmpty)
